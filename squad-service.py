@@ -1,7 +1,7 @@
 import os
 from fastapi import FastAPI
 from pydantic import BaseModel
-from model import question_answerer
+from model_util import question_answerer
 import uvicorn
 
 app = FastAPI()
