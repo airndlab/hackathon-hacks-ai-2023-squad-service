@@ -1,0 +1,11 @@
+name: squad
+
+services:
+  service:
+    build:
+      context: .
+    ports:
+      - 85:80
+    volumes:
+      - ./config:/app/config
+      - ./model:/app/model
