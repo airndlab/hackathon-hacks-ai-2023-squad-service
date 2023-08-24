@@ -1,3 +1,6 @@
 /__pycache__
 /venv
 /.venv
+/model/__pycache__
+/model/pretrained_ru_bert_sbersquad
+/model/tokenizer_ru_bert
