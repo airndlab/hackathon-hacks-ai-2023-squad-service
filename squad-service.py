@@ -14,6 +14,8 @@ class SquadItem(BaseModel):
 def healthcheck():
     return 'Health - OK'
 
+# TODO: Поиск может упасть с ошибкой - Exception: Truncation error: Sequence to truncate too short to respect the provided max_length
+# Надо настраивать работу модели !!!
 @app.post("/squad/")
 def squad(item: SquadItem):
     return question_answerer(question=item.question, context=item.context)
