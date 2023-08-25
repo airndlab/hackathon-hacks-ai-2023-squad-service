@@ -19,4 +19,4 @@ def squad(item: SquadItem):
     return question_answerer(question=item.question, context=item.context)
 
 if __name__ == '__main__':
-    uvicorn.run(app, host="0.0.0.0", port=int(8085))
+    uvicorn.run(app, host="0.0.0.0", port=int(8090))
